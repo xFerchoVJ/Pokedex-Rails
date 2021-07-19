@@ -1,0 +1,40 @@
+// Place all the styles related to the Pokemons controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.bg-img{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://i.pinimg.com/originals/69/68/1e/69681ef4639fa37d34c05f824a597cb3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.text-label{
+  font-size: 20px;
+}
+.flex{
+  display: flex;
+  justify-content: space-around;
+  .paddings{
+    width: 25%;
+    padding: 10px;
+    border-radius: 15px;
+  }
+}
+
+.pokemons{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  .pokemones{
+    display: inline;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+  }
+  .toolbar{
+    margin: 20px;
+    display: flex;
+    gap: 2rem;
+  }
+}

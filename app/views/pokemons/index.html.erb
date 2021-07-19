@@ -1,0 +1,14 @@
+<h1 class="text-center">¡POKEMONS!</h1>
+<div class="pokemons">
+  <% @pokemons.each.with_index do |pokemon, index| %>
+    <div class="pokemones">
+      <%= index + 1 %> - 
+      <%= pokemon.name %> 
+    </div>
+    <div class="toolbar">
+      <%= link_to "Ver Pokemon", pokemon_path(pokemon), class:"btn btn-secondary"%>
+      <%= link_to "Editar Pokemon", edit_pokemon_path(pokemon), class:"btn btn-primary"%>
+    </div>
+  <% end %>
+</div>
+
