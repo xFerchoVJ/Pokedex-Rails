@@ -1,1 +1,9 @@
-<h1>Hi</h1>
+<div class="container d-flex flex-column bg-light rounded mt-2">
+  <p class="text-center mt-3 fs-1"><%= @pokemon.name %></p>
+  <img src="<%= @pokemon.image%>" class="img_fluid mx-auto">
+  <p class="text-center mt-3 fs-3"><%=@pokemon.description%></p>
+  <div class="show mb-2">
+    <%=link_to "Back", pokemons_path, class:"btn btn-primary"%>
+    <%= link_to "Delete", pokemon_path(@pokemon), method: :delete, class:"btn btn-warning"%>
+  </div>
+</div>
